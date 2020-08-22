@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body class=body onload="setup()">
+<div class="text-center">
+
+
+    <h3> Rate the symmetry of the following icon</h3>
+    <h5> (0 being the lowest and 10 highest)</h5>
+    <div id="counter"></div>
+
+
+
+
+        <img src="images/43.jpg" alt="icon" height="256" width="256" >
+
+
+<div id=answer>
+    <label><input type="radio" name="Answer" value="0" required><span>0</span></label>
+    <label><input type="radio" name="Answer" value="1" required><span>1</span></label>
+    <label><input type="radio" name="Answer" value="2" required><span>2</span></label>
+    <label><input type="radio" name="Answer" value="3" required><span>3</span></label>
+    <label><input type="radio" name="Answer" value="4" required><span>4</span></label>
+    <label><input type="radio" name="Answer" value="5" required><span>5</span></label>
+    <label><input type="radio" name="Answer" value="6" required><span>6</span></label>
+    <label><input type="radio" name="Answer" value="7" required><span>7</span></label>
+    <label><input type="radio" name="Answer" value="8" required><span>8</span></label>
+    <label><input type="radio" name="Answer" value="9" required><span>9</span></label>
+    <label><input type="radio" name="Answer" value="10" required><span>10</span></label>
+    <hr>
+
+        <form action="javascript:storeAnswer()">
+            <button class=submit type="submit" >Next</button>
+        </form>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
